@@ -10,11 +10,11 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans&family=Unbounded&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>You Do You - TODO</title>
-    <script type="module" crossorigin src="/fed22d-js-grundkurs-2-todo-maedl/assets/index.07121230.js"></script>
-    <link rel="stylesheet" href="/fed22d-js-grundkurs-2-todo-maedl/assets/index.03291677.css">
+    <script type="module" crossorigin src="/fed22d-js-grundkurs-2-todo-maedl/assets/index.3f8bcd79.js"></script>
+    <link rel="stylesheet" href="/fed22d-js-grundkurs-2-todo-maedl/assets/index.fe973ae8.css">
   </head>
 
   <body>
@@ -39,6 +39,7 @@
       <div class="info-bar">Tasks: <span></span></div>
 
       <div class="main-container">
+
         <section class="sorting-section">
           <button class="close-sorting-btn close-modal-btn">X</button>
           <form name="sorting-form" class="sorting-container">
@@ -66,8 +67,13 @@
           </form>
         </section>
 
-        <!--TODO: onSubmit in i js?-->
-        <form name="input-form" class="input-section" onSubmit="return false;">
+        <section class="about-section">
+          <button class="close-about-btn close-modal-btn">X</button>
+          <div class="about-container"></div>
+        </section>
+
+
+        <form name="input-form" class="input-section">
           <button type="button" class="close-input close-modal-btn" aria-label="close input box">X</button>
           <label for="todo-input" id="input-label"> Add to do: </label>
           <input type="text" id="todo-input" class="todo-input" placeholder="Type something to do.." />
@@ -105,7 +111,7 @@
     <footer>
       <button class="open-todo-input-btn" aria-label="open add to do input field">+</button>
       <span class="material-symbols-outlined footer-icon sorting-icon"> sort </span>
-      <span class="material-symbols-outlined footer-icon settings-icon"> settings </span>
+      <span class="material-symbols-outlined footer-icon about-icon"> help </span>
     </footer>
     
   </body>
