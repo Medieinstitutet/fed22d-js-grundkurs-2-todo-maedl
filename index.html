@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans&family=Unbounded&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>You Do You - TODO</title>
-    <script type="module" crossorigin src="/fed22d-js-grundkurs-2-todo-maedl/assets/index.7ba05d6b.js"></script>
-    <link rel="stylesheet" href="/fed22d-js-grundkurs-2-todo-maedl/assets/index.da4c454c.css">
+    <script type="module" crossorigin src="/fed22d-js-grundkurs-2-todo-maedl/assets/index.e1dbf8cf.js"></script>
+    <link rel="stylesheet" href="/fed22d-js-grundkurs-2-todo-maedl/assets/index.eabc2087.css">
   </head>
 
   <body>
@@ -90,7 +90,7 @@
             </select>
           </label>
           <button type="button" class="add-todo-btn">Add</button>
-          <button type="button" class="reset-btn">Clear all fields</button>
+          <button type="button" class="reset-btn">Clear inputs</button>
         </form>
 
         <section class="todo-section">
@@ -108,13 +108,16 @@
     </main>
 
     <footer>
-      <!--TODO: footer icons not accessible with keyboard-->
       <button class="open-todo-input-btn" aria-label="open add to do input field">+</button>
-      <span class="material-symbols-outlined footer-icon sorting-icon"> sort </span>
-      <span class="material-symbols-outlined footer-icon about-icon"> help </span>
+      
+      <button type="button" class="sorting-btn footer-btn" aria-label="sorting button">
+        <span class="material-symbols-outlined footer-icon">sort</span>
+      </button>
+      <button type="button" class="about-btn footer-btn" aria-label="about button">
+        <span class="material-symbols-outlined footer-icon">help</span>
+      </button>
     </footer>
     <noscript>This app requires JavaScript to be enabled in your browser.</noscript>
-    <!--TODO: bundle script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
     
   </body>
